@@ -34,31 +34,61 @@
   },
   "projects": {
     "api": {
-      "tags": []
+      "tags": [
+        "scope:api",
+        "type:app"
+      ]
     },
     "store": {
-      "tags": [],
-      "implicitDependencies": ["api"]
+      "tags": [
+        "scope:store",
+        "type:app"
+      ],
+      "implicitDependencies": [
+        "api"
+      ]
     },
     "store-e2e": {
-      "tags": [],
-      "implicitDependencies": ["store"]
+      "tags": [
+        "scope:store",
+        "type:e2e"
+      ],
+      "implicitDependencies": [
+        "store"
+      ]
     },
     "store-feature-game-detail": {
-      "tags": []
+      "tags": [
+        "scope:store",
+        "type:feature"
+      ]
     },
     "store-ui-shared": {
-      "tags": []
+      "tags": [
+        "scope:store",
+        "type:ui"
+      ]
     },
     "store-ui-shared-e2e": {
-      "tags": [],
-      "implicitDependencies": ["store-ui-shared"]
+      "tags": [
+        "scope:store",
+        "type:e2e"
+      ],
+      "implicitDependencies": [
+        "store-ui-shared"
+      ]
     },
     "store-util-formatters": {
-      "tags": []
+      "tags": [
+        "scope:store",
+        "type:util"
+      ]
     },
     "util-interface": {
-      "tags": []
+      "tags": [
+        "scope:shared",
+        "type:util"
+      ]
     }
   }
 }
