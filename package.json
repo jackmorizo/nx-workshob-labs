@@ -27,6 +27,7 @@
     "@nrwl/angular": "^12.9.0",
     "@nrwl/express": "^12.9.0",
     "@nrwl/nest": "^12.9.0",
+    "@nrwl/nx-cloud": "^12.3.10",
     "husky": "^7.0.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~6.6.0",
