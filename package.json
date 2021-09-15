@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "nx": "nx",
+    "surge": "yarn surge",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
@@ -31,6 +33,7 @@
     "husky": "^7.0.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~6.6.0",
+    "surge": "^0.23.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },

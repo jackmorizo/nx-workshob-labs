@@ -13,7 +13,7 @@ export class AppComponent {
     console.log("component constructed")
   }
 
-  title = 'Board Game Hoard';
+  title = 'store';
   formatRating = formatRating;
   games = this.http.get<Game[]>('/api/games');
 }
