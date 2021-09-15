@@ -1,12 +1,16 @@
 import { Tree, formatFiles, installPackagesTask } from '@nrwl/devkit';
 import { libraryGenerator } from '@nrwl/workspace/generators';
-import { Schema } from './schema';
+
+interface Schema {
+  name: string;
+  directory: 'api' | 'store' | 'shared' | 'apps/vide-games';
+}
 
 export default async function (host: Tree, schema: Schema) {
   await libraryGenerator(host, {
     name: `util-${schema.name}`,
     directory: schema.directory,
-    tags: `type:util, scope:${schema.directory}`
+    tags: `type:util, scope:${schema.directory}`,
   });
   await formatFiles(host);
   return () => {
